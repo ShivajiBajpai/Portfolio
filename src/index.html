@@ -3,31 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Shivaji Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
 </head>
-<body class="leading-3 bg-slate-300">
-    <a class="inline-block bg-slate-300 text-black underline text-2xl sr-only focus:not-sr-only focus:m-2 focus:p-4 focus:text-center focus:outline-8" href="#main">Skip to main content</a>
-    <header class="min-w-full min-h-20 flex flex-row justify-around bg-slate-400 gap-40">
-        <div id="logo" class="flex justify-center p-10 text-4xl text-slate-950 font-bold">
-            <h1>Shivaji Bajpai</h1>
-        </div>
-        <nav>
-            <ul class="flex gap-14 text-2xl underline underline-offset-8 flex-wrap p-10">
-                <li><a class="focus:outline-8 focus:outline-offset-8 focus:outline-stone-950" href="#aboutMe">About</a></li>
-                <li><a class="focus:outline-8 focus:outline-offset-8 focus:outline-stone-950" href="#">Projects</a></li>
-                <li><a class="focus:outline-8 focus:outline-offset-8 focus:outline-stone-950" href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="main" class="my-8">
-        <section id="aboutMe" class="mx-60 flex flex-col gap-4">
-            <h2 class="text-3xl font-bold">About Shivaji</h2>
-            <p class="leading-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error id doloremque odit nobis similique repudiandae cupiditate nemo incidunt saepe minus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem quidem amet distinctio adipisci consectetur assumenda quam vitae vel, sit veritatis pariatur nisi, a nemo odit! Molestias fugiat cumque ad at, debitis nam quia nihil impedit tenetur sit obcaecati eos amet veniam corrupti culpa rem molestiae exercitationem est mollitia perspiciatis itaque a repudiandae. Pariatur, consectetur quo, quia autem nihil dolorum saepe aut quisquam in ducimus quaerat cupiditate nemo? Tempore porro deserunt maxime debitis! Voluptate dolor sunt quae excepturi itaque nam illum temporibus molestias quaerat beatae eos quas cumque debitis dignissimos saepe, odit iusto culpa cum natus fugiat nihil. Cumque, provident?
-            </p>
+<body class=" bg-[#a8dadc]">
+    <a class="block bg-slate-300 text-black underline text-2xl sr-only focus:not-sr-only focus:m-2 focus:p-4 focus:text-center focus:outline-8" href="#main">Skip to main content</a>
+
+    <div class="bg-[#457b9d]">
+        <header class="text-[#ffffee] h-14 lg:h-20 flex justify-around items-center lg:space-x-36 border-b-2">
+            <div class="logo p-10">
+                <h1 class="tracking-wide font-bold text-xl lg:text-3xl">Shivaji Bajpai</h1>
+            </div>
+            <div class="nav p-10">
+                <nav>
+                    <button class="sm:hidden">
+                        <i class="block fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="hidden sm:flex justify-center items-center space-x-8 text-xl underline underline-offset-4 font-semibold lg:text-2xl">
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    
+    <main id="main" class="mt-2 mx-10 lg:mx-32 lg:mt-7 text-[#1d3557]">
+        <section id="aboutMe" class="bg-[#f1faee] rounded-md p-10 shadow-md">
+            <h2 class="text-3xl font-bold text-[#1d3557]">About Shivaji</h2>
+            <div id="wrappedParaAndImage" class="mt-2">
+                <p class="leading-6">
+                    I am a <strong><em>Digital Accessibility Consultant</em></strong> with over six years of experience. I have a strong grasp of WCAG, ARIA, screen readers, and various automated accessibility tools. My background includes testing across multiple platforms like iOS, macOS, Android, and Windows, as well as conducting accessibility assessments on all major browsers, including Chrome, Safari, Firefox, and Edge.
+                    <br>
+                    I've had the opportunity to work on projects for companies like Microsoft, LinkedIn, VMware, NetworkRail, and Prudential. I have a solid foundation in HTML, CSS, and the fundamentals of JavaScript. Right now, I am focusing on learning ReactJS and TailwindCSS.<br>
+                    I have a solid foundation in HTML, CSS, and the fundamentals of JavaScript. Right now, I am focusing on learning ReactJS and TailwindCSS.
+                    I have a wide range of interests and am curious about nearly everything. Some of the topics that really engage me are cricket, politics, technology, and philosophy. <br>
+                </p>
+            </div>
         </section>
 
     </main>
+
 </body>
 </html>
