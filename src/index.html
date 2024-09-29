@@ -83,24 +83,25 @@
         <!-- Contact section -->
         <section id="contactMe" class="bg-[#f1faee] rounded-md p-10 shadow-md">
             <h2 class="text-3xl font-bold text-[#1d3557]">Contact</h2>
-            <div id="wrappedParaAndImage" class="mt-2">
+            <div class="flex justify-around">
                
-                    <form class="flex flex-col gap-4 items-center" action="">
+                    <form action="https://formspree.io/f/xgvwglyd"
+                    method="POST" class="flex flex-col gap-4 items-center md:items-start " action="">
                         <label for="fullName" class="flex flex-col">
                             <span>Full Name:<span aria-hidden="true" class="text-red-600">*</span></span>
-                            <input class=" bg-slate-100 border-slate-950 border-2  max-w-52 rounded" type="text" aria-required="true" id="fullName">
+                            <input name="fullName" class=" bg-slate-100 border-slate-950 border-2  max-w-52 rounded" type="text" aria-required="true" id="fullName">
                         </label>
 
                         <label for="fullName" class="flex flex-col">
                             <span>Email:</span>
-                            <input class="bg-slate-100 border-slate-950 border-2 max-w-52 rounded" type="email" id="fullName">
+                            <input name="emailID" class="bg-slate-100 border-slate-950 border-2 max-w-52 rounded" type="email" id="fullName">
                         </label>
 
                         <label for="fullName" class="flex flex-col">
                             <span>Enter your message:<span aria-hidden="true" class="text-red-600">*</span></span>
-                            <textarea class=" bg-slate-100 border-slate-950 border-2 rounded max-w-52" type="email" id="fullName"></textarea>
+                            <textarea name="message" class=" bg-slate-100 border-slate-950 border-2 rounded max-w-52" type="email" id="fullName"></textarea>
                         </label>
-                        <input class="bg-slate-100 border-slate-950 border-2 rounded min-w-40 max-w-52" type="submit" value="Submit">
+                        <input class="bg-slate-100 border-slate-950 border-2 rounded min-w-40 max-w-52 self-center" type="submit" value="Submit">
                     </form> 
 
                     

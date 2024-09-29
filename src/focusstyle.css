@@ -22,10 +22,3 @@ a {
     transition: outline 0.3s, box-shadow 0.3s; /* Smooth transition */
 }
 
-@supports not selector(:focus-visible) {
-    .button.with-fallback:focus {
-      /* Fallback for browsers without :focus-visible support */
-      outline: 3px solid deepskyblue;
-      outline-offset: 3px;
-    }
-  }

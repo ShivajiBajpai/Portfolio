@@ -1216,6 +1216,10 @@ video {
   margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.self-center {
+  align-self: center;
+}
+
 .text-pretty {
   text-wrap: pretty;
 }
@@ -1820,6 +1824,26 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-32 {
+    width: 8rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-0\.5 {
+    width: 0.125rem;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:items-baseline {
+    align-items: baseline;
   }
 
   .md\:bg-slate-200 {
