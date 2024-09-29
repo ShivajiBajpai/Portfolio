@@ -1,0 +1,31 @@
+:focus-visible {
+    outline: none; /* Remove default outline */
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+a:focus-visible {
+    outline: 2px solid black; /* Custom outline color */
+    outline-offset: 4px; /* Space between the outline and element */
+    box-shadow: 0 0 5px rgba(0, 95, 115, 0.5); /* Optional shadow for extra visibility */
+    border-radius: 3px;
+}
+
+/* Add transitions for a smoother effect */
+button,
+input,
+textarea,
+select,
+a {
+    transition: outline 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+@supports not selector(:focus-visible) {
+    .button.with-fallback:focus {
+      /* Fallback for browsers without :focus-visible support */
+      outline: 3px solid deepskyblue;
+      outline-offset: 3px;
+    }
+  }

@@ -6,30 +6,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Shivaji Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="focusstyle.css">
     <script src="script.js" defer></script>
     
 </head>
 <body class="bg-[#a8dadc]">
 
     <!-- Skip to main content link -->
-    <a class="block bg-slate-300 text-black underline text-2xl sr-only focus:not-sr-only focus:m-2 focus:p-4 focus:text-center focus:outline-8" href="#main">Skip to main content</a>
+    <a class="block bg-slate-300 text-black underline text-2xl sr-only focus:not-sr-only focus:m-2 focus:p-4 focus:text-center" href="#main">Skip to main content</a>
 
     <!-- header section -->
     <div class="bg-[#457b9d] border-b-2 text-[#ffffee]">
         <header class="h-14 flex items-center justify-between lg:h-20">
             
-
             <!-- main heading section -->
                 <div class="logo p-10">
                     <h1 class="tracking-wide font-bold text-xl lg:text-3xl">Shivaji Bajpai</h1>
                 </div>
 
                 <!-- navigation panel flyout -->
-                <nav id="navPanel" class="absolute top-11 w-full bg-[#457b9d] pt-2 pb-3 hidden">
+                <nav id="navPanel" class="absolute top-11 w-full bg-[#457b9d] pt-2 pb-3 hidden sm:hidden">
                     <ul class="flex flex-col items-center underline underline-offset-2 text-xl gap-2">
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li><a href="#aboutMe">About</a></li>
+                        <li><a href="#projectsSection">Projects</a></li>
+                        <li><a href="#contactMe">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -43,10 +43,10 @@
                 <!-- navigatio panel -->
             <div class="nav p-10 hidden sm:block">
                 <nav class="flex">
-                    <ul class="hidden sm:flex justify-center items-center space-x-8 text-xl underline underline-offset-4 font-semibold lg:text-2xl">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                    <ul class="hidden sm:flex justify-center items-center space-x-8 text-xl underline underline-offset-2 font-semibold lg:text-2xl">
+                        <li><a href="#aboutMe">About</a></li>
+                        <li><a href="#projectsSection">Projects</a></li>
+                        <li><a href="#contactMe">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +54,7 @@
     </div>
     
     <!-- main section -->
-    <main id="main" class="mt-2 mx-10 lg:mx-32 lg:mt-7 text-[#1d3557]">
+    <main id="main" class="space-y-5 mt-5 mb-5 mx-10 lg:mx-32 lg:mt-7 text-[#1d3557]">
 
         <!-- about section -->
         <section id="aboutMe" class="bg-[#f1faee] rounded-md p-10 shadow-md">
@@ -70,7 +70,69 @@
             </div>
         </section>
 
+        <!-- Projects section -->
+        <section id="projectsSection" class="bg-[#f1faee] rounded-md p-10 shadow-md">
+            <h2 class="text-3xl font-bold text-[#1d3557]">Projects</h2>
+            <div id="wrappedParaAndImage" class="mt-2">
+                <p class="leading-6">
+                    
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contactMe" class="bg-[#f1faee] rounded-md p-10 shadow-md">
+            <h2 class="text-3xl font-bold text-[#1d3557]">Contact</h2>
+            <div id="wrappedParaAndImage" class="mt-2">
+               
+                    <form class="flex flex-col gap-4 items-center" action="">
+                        <label for="fullName" class="flex flex-col">
+                            <span>Full Name:<span aria-hidden="true" class="text-red-600">*</span></span>
+                            <input class=" bg-slate-100 border-slate-950 border-2  max-w-52 rounded" type="text" aria-required="true" id="fullName">
+                        </label>
+
+                        <label for="fullName" class="flex flex-col">
+                            <span>Email:</span>
+                            <input class="bg-slate-100 border-slate-950 border-2 max-w-52 rounded" type="email" id="fullName">
+                        </label>
+
+                        <label for="fullName" class="flex flex-col">
+                            <span>Enter your message:<span aria-hidden="true" class="text-red-600">*</span></span>
+                            <textarea class=" bg-slate-100 border-slate-950 border-2 rounded max-w-52" type="email" id="fullName"></textarea>
+                        </label>
+                        <input class="bg-slate-100 border-slate-950 border-2 rounded min-w-40 max-w-52" type="submit" value="Submit">
+                    </form> 
+
+                    
+                
+                    <div id="socialMediaLinks">
+                        <h3>Connect with me on:</h2>
+                            <div class="flex gap-4">
+                                <div id="linkedin">
+                                    <a target="_blank" href="https://www.linkedin.com/in/shivajibajpai/">
+                                        <i class="text-3xl fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+        
+                                <div id="gitHub">
+                                    <a target="_blank" href="https://github.com/ShivajiBajpai">
+                                        <i class="text-3xl fa-brands fa-square-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </section>
     </main>
+
+    <!-- footer section -->
+     <footer>
+        <div id="footerSection" class="bg-[#457b9d] border-t-2 text-[#ffffee] h-10 flex justify-center items-center">
+
+            <p class="text-center text-xl font-semibold">&copy; Shivaji Bajpai</p>
+
+        </div>
+     </footer>
 
 </body>
 </html>
