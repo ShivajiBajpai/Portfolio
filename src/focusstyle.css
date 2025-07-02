@@ -19,5 +19,8 @@ a {
     transition: outline 0.3s, box-shadow 0.3s; /* Smooth transition */
 }
 
+:focus{
+    outline: none;
+}
 
 
