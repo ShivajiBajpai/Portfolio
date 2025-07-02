@@ -4,6 +4,22 @@ const navigationMenuButton = document.getElementById("navigationMenu");
 // Get navigation menu button
 const navPanel = document.getElementById("navPanel");
 
+// Check if user is using keyboard or mouse or touch
+
+let isKeyboard = false;
+
+window.addEventListener("keydown", () => {
+  isKeyboard = true;
+});
+
+window.addEventListener("mousedown", () => {
+  isKeyboard = false;
+});
+
+window.addEventListener("touchstart", () => {
+  isKeyboard = false;
+});
+
 //Open/Close navigation menu on click on navigation button
 navigationMenuButton.addEventListener("click", ()=>{
     navPanel.classList.toggle("hidden");
@@ -14,8 +30,11 @@ navigationMenuButton.addEventListener("click", ()=>{
         navigationMenuButton.setAttribute("aria-expanded", "true")
         const dropdownelements = navPanel.querySelectorAll('a, button, input, [tabindex]:not([tabindex="-1"])');
 
-        //Move focus to the first element of the dropdown
-        dropdownelements[0].focus();
+        //Move focus to the first element of the dropdown if user is using mouse
+        if(isKeyboard){
+            dropdownelements[0].focus();
+        }
+        
 
         //Close the dropdown if user presses 'Shift + Tab' key on first element
         dropdownelements[0].addEventListener('keydown', function handleshifttabout(e){
