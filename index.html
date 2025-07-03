@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,13 @@
     
     
 </head>
-<body class="bg-[#a8dadc]">
+<body class="bg-[#2B2D42] text-[#F8F9FA]">
 
     <!-- Skip to main content link -->
-    <a class="block bg-[#5BC0EB] text-[#1B1D2C] underline text-2xl sr-only focus:not-sr-only focus:m-2 focus:p-4 focus:text-center" href="#main">Skip to main content</a>
+    <a class="block sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-[#F15BB5] focus:text-white focus:underline focus:text-xl focus:p-4 focus:rounded-lg focus:shadow-lg transition duration-300" href="#main">Skip to main content</a>
 
     <!-- header section -->
-    <div class="bg-[#457b9d] border-b-2 text-[#ffffee]">
+    <div class="bg-[#1B1D2C] border-b-2 border-[#5BC0EB] ">
         <header class="h-14 flex items-center justify-between lg:h-20">
             
             <!-- main heading section -->
@@ -32,7 +32,7 @@
                 </div>    
 
                 <!-- navigation panel flyout -->
-                <nav id="navPanel" class="absolute top-11 w-full bg-[#457b9d] pt-2 pb-3 hidden sm:hidden">
+                <nav id="navPanel" class="absolute top-11 w-full bg-[#1B1D2C] pt-2 pb-3 hidden sm:hidden">
                     <ul class="flex flex-col items-center underline underline-offset-2 text-xl gap-2">
                         <li><a href="#aboutMe">About</a></li>
                         <li><a href="#projectsSection">Projects</a></li>
@@ -56,11 +56,11 @@
     </div>
     
     <!-- main section -->
-    <main id="main" class="space-y-5 mt-5 mb-5 mx-10 lg:mx-32 lg:mt-7 text-[#1d3557]">
+    <main id="main" class="space-y-5 mt-5 mb-5 mx-10 lg:mx-32 lg:mt-7">
 
 
         <!-- hero section -->
-         <section class="relative bg-[#f1faee] rounded-md p-10 shadow-md text-[#1d3557] py-20 px-6 sm:px-10 lg:px-32">
+         <section class="relative bg-[#1B1D2C] rounded-md p-10 shadow-md py-20 px-6 sm:px-10 lg:px-32">
             <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-24">
     
                 <!-- Left: Text Content -->
@@ -68,24 +68,24 @@
                   <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
                     Shivaji Bajpai
                   </h1>
-                  <p class="text-xl sm:text-2xl font-medium text-[#1d3557]">
+                  <p class="text-xl sm:text-2xl font-medium">
                     Accessibility Consultant Specializing in Front-End Technologies
                   </p>
-                  <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+                  <p class="text-base sm:text-lg leading-relaxed text-[#AAB0BC]">
                     I build inclusive, scalable digital experiences by combining accessibility best practices with modern front-end development. Currently focused on ReactJS and TailwindCSS.
                   </p>
                   <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
-                    <a href="#projectsSection" class="px-6 py-3 rounded-2xl bg-[#457b9d] text-white font-semibold hover:bg-[#356683] transition">
+                    <a href="#projectsSection" class="px-6 py-3 rounded-2xl bg-[#5BC0EB] text-[#1B1D2C] font-semibold hover:bg-[#F15BB5] hover:text-white transition duration-300">
                       View Projects
                     </a>
-                    <a href="#contactMe" class="px-6 py-3 rounded-2xl border-2 border-[#457b9d] text-[#457b9d] font-semibold hover:bg-[#457b9d] hover:text-white transition">
+                    <a href="#contactMe" class="px-6 py-3 rounded-2xl border-2 border-[#5BC0EB] text-[#5BC0EB] font-semibold hover:bg-[#F15BB5] hover:text-white transition duration-300">
                       Contact Me
                     </a>
                   </div>
                 </div>
             
                 <!-- Right: Image -->
-                <div class="flex-1">
+                <div class="flex-1 lg:pl-10">
                   <img
                     src="https://avatars.githubusercontent.com/u/39898280?v=4" 
                     alt="Illustration of Shivaji Bajpai"
@@ -98,10 +98,10 @@
          </section>
 
         <!-- about section -->
-        <section id="aboutMe" class="bg-[#f1faee] rounded-md p-10 shadow-md">
-            <h2 class="text-3xl font-bold text-[#1d3557]">About Shivaji</h2>
+        <section id="aboutMe" class="bg-[#1B1D2C] rounded-md p-10 shadow-md">
+            <h2 class="text-3xl font-bold">About Shivaji</h2>
             <div id="wrappedParaAndImage" class="mt-2">
-                <p class="leading-6">
+                <p class="leading-6 text-[#AAB0BC] mt-2">
                     I am a <strong><em>Digital Accessibility Consultant</em></strong> with over six years of experience. I have a strong grasp of WCAG, ARIA, screen readers, and various automated accessibility tools. My background includes testing across multiple platforms like iOS, macOS, Android, and Windows, as well as conducting accessibility assessments on all major browsers, including Chrome, Safari, Firefox, and Edge.
                     <br>
                     I've had the opportunity to work on projects for companies like Microsoft, LinkedIn, VMware, NetworkRail, and Prudential. I have a solid foundation in HTML, CSS, and the fundamentals of JavaScript. Right now, I am focusing on learning ReactJS and TailwindCSS.<br>
@@ -112,44 +112,44 @@
         </section>
 
         <!-- Projects section -->
-        <section id="projectsSection" class="bg-[#f1faee] rounded-md p-10 shadow-md">
-            <h2 class="text-3xl font-bold text-[#1d3557]">Projects</h2>
+        <section id="projectsSection" class="bg-[#1B1D2C] rounded-md p-10 shadow-md">
+            <h2 class="text-3xl font-bold">Projects</h2>
             <div id="wrappedParaAndImage" class="mt-2">
-                <p class="leading-6">
+                <p class="leading-6 text-[#AAB0BC] mt-2">
                     
                 </p>
             </div>
         </section>
 
         <!-- Contact section -->
-        <section id="contactMe" class="bg-[#f1faee] rounded-md p-10 shadow-md">
-            <h2 class="text-3xl font-bold text-[#1d3557]">Contact</h2>
+        <section id="contactMe" class="bg-[#1B1D2C] rounded-md p-10 shadow-md">
+            <h2 class="text-3xl font-bold">Contact</h2>
             <div class="flex flex-col sm:flex-row space-y-3 justify-around">
                
                     <form action="https://formspree.io/f/xgvwglyd"
-                    method="POST" class="flex flex-col gap-4 items-center md:items-start " action="">
+                    method="POST" class="flex flex-col gap-4 items-center md:items-start">
                         <label for="fullName" class="flex flex-col">
-                            <span>Full Name:<span aria-hidden="true" class="text-red-600">*</span></span>
-                            <input name="fullName" class=" bg-slate-100 border-slate-950 border-2  max-w-52 rounded" type="text" id="fullName" required>
+                            <span>Full Name:<span aria-hidden="true" class="text-[#F15BB5]">*</span></span>
+                            <input name="fullName" class=" bg-[#2B2D42] border-[#5BC0EB] border-2  max-w-52 rounded" type="text" id="fullName" required>
                         </label>
 
-                        <label for="fullName" class="flex flex-col">
-                            <span>Email:<span aria-hidden="true" class="text-red-600">*</span></span>
-                            <input name="emailID" class="bg-slate-100 border-slate-950 border-2 max-w-52 rounded" type="email" id="fullName" required>
+                        <label for="email" class="flex flex-col">
+                            <span>Email:<span aria-hidden="true" class="text-[#F15BB5]">*</span></span>
+                            <input name="emailID" class="bg-[#2B2D42] text-white border-[#5BC0EB] border-2 max-w-52 rounded" type="email" id="email" required>
                         </label>
 
-                        <label for="fullName" class="flex flex-col">
-                            <span>Enter your message:<span aria-hidden="true" class="text-red-600">*</span></span>
-                            <textarea name="message" class=" bg-slate-100 border-slate-950 border-2 rounded max-w-52" type="email" id="fullName" required></textarea>
+                        <label for="message" class="flex flex-col">
+                            <span>Enter your message:<span aria-hidden="true" class="text-[#F15BB5]">*</span></span>
+                            <textarea name="message" class=" bg-[#2B2D42] text-white border-[#5BC0EB] border-2 rounded max-w-52" id="message" required></textarea>
                         </label>
-                        <input class="bg-slate-100 border-slate-950 border-2 rounded min-w-40 max-w-52 self-center" type="submit" value="Submit">
+                        <input class="bg-[#5BC0EB] text-[#1B1D2C] border-2 rounded min-w-40 max-w-52 font-semibold hover:bg-[#F15BB5] hover:text-white transition duration-300" type="submit" value="Submit">
                     </form> 
 
                     
                 
                     <div id="socialMediaLinks">
-                        <h3 class="text-center">Connect with me on:</h2>
-                            <div class="flex gap-4 justify-center items-center">
+                        <h3 class="text-center">Connect with me on:</h3>
+                            <div class="flex gap-4 justify-center items-center mt-3">
                                 <div id="linkedin">
                                     <a target="_blank" href="https://www.linkedin.com/in/shivajibajpai/" aria-label="Connect with me on LinkedIn">
                                         <i class="text-3xl fa-brands fa-linkedin"></i>
@@ -169,7 +169,7 @@
 
     <!-- footer section -->
      <footer>
-        <div id="footerSection" class="bg-[#457b9d] border-t-2 text-[#ffffee] h-10 flex justify-center items-center">
+        <div id="footerSection" class="bg-[#1B1D2C] border-t-2 border-[#5BC0EB] h-10 flex justify-center items-center">
 
             <p class="text-xl font-semibold">&copy; Shivaji Bajpai</p>
 
