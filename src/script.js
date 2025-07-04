@@ -74,3 +74,14 @@ document.addEventListener('focusin', (e)=>{
 })
 
 
+
+
+//Close menu dropdown if user clicks anywhere on the page except dropdown menu
+
+document.addEventListener('click', (e)=>{
+    if(!(navPanel.contains(e.target))&& !navigationMenuButton.contains(e.target)){
+        navPanel.classList.add("hidden");
+        navigationMenuButton.setAttribute('aria-expanded', "false");
+    }
+})
+
